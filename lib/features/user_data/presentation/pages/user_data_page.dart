@@ -7,6 +7,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../../core/common/widgets/custom_text_field.dart';
 import '../../../../core/common/widgets/simple_app_bar.dart';
 import '../../../../core/theme/colors.dart';
+import '../../../../core/theme/font_size.dart';
+import '../../../../core/theme/text_styles.dart';
 
 @RoutePage()
 class UserDataPage extends StatefulWidget {
@@ -60,15 +62,28 @@ class _UserDataPageState extends State<UserDataPage> with ValidationsMixin {
                       validator: validatedPhoneNumber,
                     ),
                     const SizedBox(height: 20),
-                    const Text('Gender:'),
+                    Text(
+                      'Gender:',
+                      style: kTextStyleDMSans600.copyWith(
+                        fontSize: FontSize.f16,
+                        color: AppColors.kColorCrlBorder,
+                      ),
+                    ),
                     Row(
                       children: [
                         Expanded(
                           child: RadioListTile<String>(
-                            title: const Text('Male'),
+                            title: Text(
+                              'Male',
+                              style: kTextStyleDMSans600.copyWith(
+                                fontSize: FontSize.f16,
+                                color: AppColors.kColorCrlBorder,
+                              ),
+                            ),
                             value: 'Male',
                             // ignore: deprecated_member_use
                             groupValue: _gender,
+                            // ignore: deprecated_member_use
                             onChanged: (value) {
                               setState(() => _gender = value);
                             },
@@ -76,9 +91,17 @@ class _UserDataPageState extends State<UserDataPage> with ValidationsMixin {
                         ),
                         Expanded(
                           child: RadioListTile<String>(
-                            title: const Text('Female'),
+                            title: Text(
+                              'Female',
+                              style: kTextStyleDMSans600.copyWith(
+                                fontSize: FontSize.f16,
+                                color: AppColors.kColorCrlBorder,
+                              ),
+                            ),
                             value: 'Female',
+                            // ignore: deprecated_member_use
                             groupValue: _gender,
+                            // ignore: deprecated_member_use
                             onChanged: (value) {
                               setState(() => _gender = value);
                             },

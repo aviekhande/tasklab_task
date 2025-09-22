@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../core/common/widgets/simple_app_bar.dart';
+import '../../../../core/theme/font_size.dart';
+import '../../../../core/theme/text_styles.dart';
 
 @RoutePage()
 class HomePage extends StatelessWidget {
@@ -41,7 +43,13 @@ class HomePage extends StatelessWidget {
               itemBuilder: (context, index) {
                 return ListTile(
                   leading: const Icon(Icons.star, color: Colors.green),
-                  title: Text(items[index]),
+                  title: Text(
+                    items[index],
+                    style: kTextStyleDMSans600.copyWith(
+                      fontSize: FontSize.f18,
+                      color: AppColors.kColorCrlBorder,
+                    ),
+                  ),
                 );
               },
             ),

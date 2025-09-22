@@ -36,7 +36,7 @@ class MyApp extends StatelessWidget {
               return AnnotatedRegion<SystemUiOverlayStyle>(
                 value: const SystemUiOverlayStyle(
                   statusBarColor: Colors.transparent,
-                  statusBarIconBrightness: Brightness.light, // Android
+                  statusBarIconBrightness: Brightness.dark, // Android
                   statusBarBrightness: Brightness.dark, // iOS
                 ),
                 child: MediaQuery(
