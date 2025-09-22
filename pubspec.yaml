@@ -1,0 +1,80 @@
+name: demmy_app_tasklabs
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  auto_route: ^10.1.2
+  flutter:
+    sdk: flutter
+  flutter_screenutil: ^5.9.3
+  flutter_svg: ^2.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  build_runner: ^2.4.15
+  auto_route_generator: ^10.2.3
+
+flutter:
+  uses-material-design: true
+  fonts:
+    - family: DMSans-Light
+      fonts:
+        - asset: assets/fonts/DMSans/DMSans-Light.ttf
+
+    - family: DMSans-Regular
+      fonts:
+        - asset: assets/fonts/DMSans/DMSans-Regular.ttf
+
+    - family: DMSans-Medium
+      fonts:
+        - asset: assets/fonts/DMSans/DMSans-Medium.ttf
+
+    - family: DMSans-SemiBold
+      fonts:
+        - asset: assets/fonts/DMSans/DMSans-SemiBold.ttf
+
+    - family: DMSans-SemiBoldItalic
+      fonts:
+        - asset: assets/fonts/DMSans/DMSans-SemiBoldItalic.ttf
+
+    - family: DMSans-MediumItalic
+      fonts:
+        - asset: assets/fonts/DMSans/DMSans-MediumItalic.ttf
+
+    - family: DMSans-Bold
+      fonts:
+        - asset: assets/fonts/DMSans/DMSans-Bold.ttf
+
+    - family: DMSans-ExtraBold
+      fonts:
+        - asset: assets/fonts/DMSans/DMSans-ExtraBold.ttf
+
+    - family: DMSans-Black
+      fonts:
+        - asset: assets/fonts/DMSans/DMSans-Black.ttf
+
+    - family: Poppins-Light
+      fonts:
+        - asset: assets/fonts/Poppins/Poppins-Light.ttf
+
+    - family: Poppins-Regular
+      fonts:
+        - asset: assets/fonts/Poppins/Poppins-Regular.ttf
+
+    - family: Poppins-Medium
+      fonts:
+        - asset: assets/fonts/Poppins/Poppins-Medium.ttf
+
+    - family: Poppins-SemiBold
+      fonts:
+        - asset: assets/fonts/Poppins/Poppins-SemiBold.ttf
+
+    - family: Poppins-Bold
+      fonts:
+        - asset: assets/fonts/Poppins/Poppins-Bold.ttf
