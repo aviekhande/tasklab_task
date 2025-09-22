@@ -30,23 +30,30 @@ class _DashbordPageState extends State<DashbordPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: _pages[_selectedIndex],
-      bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: AppColors.kColorPrimaryText,
-        selectedLabelStyle: kTextStyleDMSans600.copyWith(
-          fontSize: FontSize.f18,
-          color: AppColors.kColorPrimary,
+      bottomNavigationBar: Container(
+        decoration: const BoxDecoration(
+          border: Border(
+            top: BorderSide(color: AppColors.kColorWhite75, width: 1),
+          ),
         ),
-        unselectedLabelStyle: kTextStyleDMSans500.copyWith(
-          fontSize: FontSize.f16,
-          color: AppColors.kColorCrlBorder,
+        child: BottomNavigationBar(
+          backgroundColor: AppColors.kColorPrimaryText,
+          selectedLabelStyle: kTextStyleDMSans600.copyWith(
+            fontSize: FontSize.f18,
+            color: AppColors.kColorPrimary,
+          ),
+          unselectedLabelStyle: kTextStyleDMSans500.copyWith(
+            fontSize: FontSize.f16,
+            color: AppColors.kColorCrlBorder,
+          ),
+          items: const <BottomNavigationBarItem>[
+            BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+            BottomNavigationBarItem(icon: Icon(Icons.list), label: 'Data'),
+          ],
+          currentIndex: _selectedIndex,
+          selectedItemColor: AppColors.kColorPrimary,
+          onTap: _onItemTapped,
         ),
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-          BottomNavigationBarItem(icon: Icon(Icons.list), label: 'Data'),
-        ],
-        currentIndex: _selectedIndex,
-        selectedItemColor: AppColors.kColorPrimary,
-        onTap: _onItemTapped,
       ),
     );
   }

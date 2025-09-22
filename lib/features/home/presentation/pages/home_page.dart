@@ -42,7 +42,10 @@ class HomePage extends StatelessWidget {
               itemCount: items.length,
               itemBuilder: (context, index) {
                 return ListTile(
-                  leading: const Icon(Icons.star, color: Colors.green),
+                  leading: const Icon(
+                    Icons.star,
+                    color: AppColors.kColorPrimary,
+                  ),
                   title: Text(
                     items[index],
                     style: kTextStyleDMSans600.copyWith(
